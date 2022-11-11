@@ -1,0 +1,64 @@
+@media (max-width: 1150px) {
+    .section1-navigation {
+        height: 72px;
+    }
+    .section1-logo {
+        padding: 0px;
+        margin: 24px 0px;
+    }
+    .section1-logo h1 {
+        font-size: 60px;
+    }
+    
+    .section1-links {
+    background-color: rgb(13, 17, 23);
+    padding: 0px;
+    margin-right: 0px;
+    bottom: 0px;
+    position: fixed;
+    right: 0px;
+    top: 72px;
+    flex-direction: column;
+    align-items: flex-start;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    height: 100%;
+    z-index: 5;
+    width: 100vw;
+    gap: 40px;
+    transform: translateX(100vw);
+    transition: all 0.6s cubic-bezier(0.82, 0.085, 0.395, 0.895) 0s;
+    }
+    .sb1-links {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+        margin-right: 140px;
+    }
+    .section1-column {
+        align-items: flex-start;
+    }
+    .sb1-right {
+        margin-left: 40px;
+        gap: 20px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+    }
+    .hamburger-icon {
+        width: auto;
+        height: 72px;
+        padding: 0px;
+        background-color: transparent;
+        border: 0px;
+        display: initial !important;
+    }
+    .hamburger-icon::before {
+        content: url(assets\icons\hamburger.svg);
+        width: auto;
+        height: 72px;
+    }
+}
