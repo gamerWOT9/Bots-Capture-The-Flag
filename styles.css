@@ -54,9 +54,28 @@ body {
     padding: 0;
 }
 
-.animation1 {
-    transition: 0.4s;
-}
+/* ANIMATIONS */
+        .animation1 {
+            transition: 0.4s;
+        }
+
+        
+        @keyframes welcomeBLAM {
+            0% {
+                transform: translateY(10vh);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0px);
+                opacity: 1;
+            }
+        }
+        .anime-welcomeBLAM {
+            animation-name: welcomeBLAM;
+            animation-duration: 1s;
+            animation-timing-function: ease-in-out;
+        }
+/* ANIMATIONS */
 
 
 
