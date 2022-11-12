@@ -17,7 +17,7 @@
   display: block;
   position: absolute;
   text-align: center;
-  content: counter(gallery-cell);
+  /*content: counter(gallery-cell);*/
   /*line-height: 200px;*/
   font-size: 30px;
   color: white;

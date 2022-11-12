@@ -1,7 +1,7 @@
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+  if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
     document.getElementById("section1-idnav").style.padding = "0 var(--responsivePadding)";
     document.getElementById("section1-idlogo").style.margin = "1px";
     document.getElementById("sb1-idbg").style.display = "none";

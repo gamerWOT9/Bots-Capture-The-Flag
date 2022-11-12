@@ -28,7 +28,7 @@ z-index: 8;
     font-family: AllianceNo2, sans-serif;
 }
 :root {
-    --main-color1: black /*rgb(27, 196, 146)*/;
+    --main-color1: white /*rgb(27, 196, 146)*/;
     --main-color2: white;
     --responsivePadding: 40px;
     --responsive: 10px;
@@ -37,7 +37,7 @@ z-index: 8;
     --github-faq-responsive: 16px;
     --github-home-responsive: 14px;
     --github-resources-responsive: 16px;
-    background-color: rgb(25, 34, 49);
+    background-color: black;
 }
 a {
     text-decoration: none;
@@ -286,5 +286,11 @@ main {
 .section1-main {
     width: 100%;
     overflow: hidden;
+    margin: 120px 0 0 0;
+    border-radius: 30px;
+    background-color: white;
+}
+.section1-main p {
+    margin: 50px;
 }
 /* BODY */
