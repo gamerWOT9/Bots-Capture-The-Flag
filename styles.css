@@ -28,7 +28,7 @@ z-index: 8;
     font-family: AllianceNo2, sans-serif;
 }
 :root {
-    --main-color1: rgb(27, 196, 146);
+    --main-color1: black /*rgb(27, 196, 146)*/;
     --main-color2: white;
     --responsivePadding: 40px;
     --responsive: 10px;
