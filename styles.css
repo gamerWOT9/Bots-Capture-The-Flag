@@ -28,10 +28,13 @@ z-index: 8;
     font-family: AllianceNo2, sans-serif;
 }
 :root {
-    --main-color1: white /*rgb(27, 196, 146)*/;
-    --main-sb-color1: 14,0,255;
+    --main1-color1: white /*rgb(27, 196, 146)*/;
+    --main1-color2: 14,0,255;
 
-    --main-color2: white;
+    --main2-color1: white;
+
+    --main3-color1: rgb(204, 195, 255);
+    --main3-color2: rgb(155 138 255);
 
 
     --responsivePadding: 40px;
@@ -72,11 +75,11 @@ div.background-image {
     position: fixed;
 
     /*background: rgb(34,193,195);
-    background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.30) 50%, var(--main-sb-color1) 100%);*/
+    background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.30) 50%, var(--main1-color2) 100%);*/
     background-color: white;
 
     background: linear-gradient(160deg, rgba(14,0,255,1) 0%, rgba(0,0,0,0) 80%);
-    background: radial-gradient(circle at 50% 0, rgba(var(--main-sb-color1),1) 0%, rgba(var(--main-sb-color1),0.5) 20%, rgba(0,0,0,0) 100%);
+    background: radial-gradient(circle at 50% 0, rgba(var(--main1-color2),1) 0%, rgba(var(--main1-color2),0.5) 20%, rgba(0,0,0,0) 100%);
 }
 
 
@@ -139,14 +142,14 @@ div.background-image {
             flex-direction: row-reverse;
             -webkit-box-pack: center;
             justify-content: center;
-            background: var(--main-color1);
+            background: var(--main1-color1);
             padding: 13px 24px;
             cursor: pointer;
         }
         .Button.primary.main {
             padding: 16px 24px !important;
             color: rgb(36, 41, 46) !important;
-            background-color: var(--main-color1) !important;
+            background-color: var(--main1-color1) !important;
             line-height: 16px !important;
             display: flex !important;
             -webkit-box-pack: center !important;
@@ -156,7 +159,7 @@ div.background-image {
         }
         .Link {
             font-size: 15px;
-            color: var(--main-color1);
+            color: var(--main1-color1);
             line-height: 25px;
         }
 
@@ -250,7 +253,7 @@ div.background-image {
         width: 0%;
         content: '.';
         color: transparent;
-        background: var(--main-color2);
+        background: var(--main2-color1);
         height: 2px;
         }
         .section1-column:hover:after {
@@ -268,7 +271,7 @@ div.background-image {
         opacity: 0;
         }
         .section1-column:hover {
-        color: var(--main-color2);
+        color: var(--main2-color1);
         z-index: 1;
         }
         .section1-column:hover:after {
@@ -331,7 +334,7 @@ div.background-image {
             .sb-body-white {
                 background-color: rgba(255, 255, 255, 0.05);
                 margin: 120px 0 0 0;
-                padding: 120px 0 120px 0;
+                padding: 120px 0 0 0;
 
                 width: var(--body-width);
                 margin-left: auto;
@@ -351,7 +354,7 @@ div.background-image {
             .section1-main {
                 overflow: hidden;
                 border-radius: var(--raduis-border1);
-                background-color: rgb(204, 195, 255);
+                background-color: var(--main3-color1);
                 padding: 20px;
 
                 position: sticky;
@@ -364,11 +367,10 @@ div.background-image {
             }
 
             .sb-body-black {
-                background-color: rgb(212 157 255);
-                margin: 120px 0 0 0;
+                background-color: var(--main3-color2);
                 border-radius: var(--raduis-border1);
                 overflow: hidden;
-                height: 500px;
+                min-height: 500px;
 
                 width: var(--body-width);
                 margin-left: auto;
@@ -389,5 +391,35 @@ div.background-image {
             }
             .for-section1-main {
                 padding: 30px;
+            }
+
+
+
+            .sb-body-video {
+                background-color: transparent;
+                border-radius: var(--raduis-border1);
+                overflow: hidden;
+                min-height: 500px;
+
+                width: var(--body-width);
+                margin-left: auto;
+                margin-right: auto;
+                z-index: 1;
+            }
+            .video-container {
+                position: relative;
+                overflow: hidden;
+                width: 100%;
+                padding-top: 56.25%;
+                border-radius: 12px;
+            }
+            .responsive-iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
             }
 /* BODY */
