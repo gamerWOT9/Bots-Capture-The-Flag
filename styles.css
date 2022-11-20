@@ -24,6 +24,8 @@ position: sticky;
 z-index: 8;
 }
 */
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@800&display=swap');
+
 * {
     font-family: AllianceNo2, sans-serif;
 }
@@ -325,6 +327,14 @@ div.background-image {
                 position: sticky;
                 z-index: 1;
             }
+            .body1 h1 {
+                font-family: 'Syne', sans-serif;
+                font-size: 80px;
+                margin: 0 0 32px 0;
+
+                color: white;
+                text-decoration: underline overline var(--main3-color1);
+            }
 
             main {
                 width: 100%;
@@ -332,11 +342,15 @@ div.background-image {
             }
 
             .sb-body-white {
-                background-color: rgba(255, 255, 255, 0.05);
-                margin: 120px 0 0 0;
+                margin: 120px 0 120px 0;
                 padding: 120px 0 0 0;
 
                 width: var(--body-width);
+                margin-left: auto;
+                margin-right: auto;
+                z-index: 1;
+            }
+            .sb2-body-white {
                 margin-left: auto;
                 margin-right: auto;
                 z-index: 1;
@@ -366,16 +380,21 @@ div.background-image {
                 vertical-align: middle;
             }
 
+            
+
             .sb-body-black {
-                background-color: var(--main3-color2);
-                border-radius: var(--raduis-border1);
-                overflow: hidden;
                 min-height: 500px;
 
                 width: var(--body-width);
                 margin-left: auto;
                 margin-right: auto;
                 z-index: 1;
+            }
+            .sb2-body-black {
+                background-color: var(--main3-color2);
+                border-radius: var(--raduis-border1);
+                overflow: hidden;
+                max-height: 500px;
 
                 position: relative;
                 display: grid;
