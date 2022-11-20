@@ -164,6 +164,9 @@ div.background-image {
             font-size: 15px;
             color: var(--main1-color1);
             line-height: 25px;
+            height: 100%;
+            display: flex;
+            align-items: center;
         }
 
 
@@ -302,7 +305,6 @@ div.background-image {
         }
         .hamburger-icon {
             display: none !important;
-            display: flex;
             -webkit-box-align: center;
             align-items: center;
             gap: 10px;
