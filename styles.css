@@ -24,10 +24,10 @@ position: sticky;
 z-index: 8;
 }
 */
-@import url('https://fonts.googleapis.com/css2?family=Syne:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;800&display=swap');
 
 * {
-    font-family: AllianceNo2, sans-serif;
+    font-family: 'Syne', sans-serif;
 }
 :root {
     --main1-color1: white /*rgb(27, 196, 146)*/;
@@ -335,6 +335,13 @@ div.background-image {
                 color: white;
                 text-decoration: underline overline var(--main3-color1);
             }
+            .body1 h2 {
+                margin: 0;
+            }
+            .body1 p {
+                font-family: 'Syne', sans-serif;
+                font-size: 20px;
+            }
 
             main {
                 width: 100%;
@@ -401,12 +408,21 @@ div.background-image {
                 /*gap: 1.25rem;*/
                 grid-template-columns: repeat(2, 1fr);
             }
+            .img-container {
+                height: 100%;
+                position: relative;
+                display: flex;
+                overflow: hidden;
+                align-items: center;
+
+                border-radius: var(--raduis-border1);
+            }
             .sb-body-black img {
                 width: 100%;
-                height: 100%;
                 background-attachment: fixed;
                 background-size: cover;
                 right: 0;
+                position: absolute;
             }
             .for-section1-main {
                 padding: 30px;
@@ -415,7 +431,7 @@ div.background-image {
 
 
             .sb-body-video {
-                background-color: transparent;
+                background-color: black;
                 border-radius: var(--raduis-border1);
                 overflow: hidden;
                 min-height: 500px;
