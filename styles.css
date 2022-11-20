@@ -401,7 +401,6 @@ div.background-image {
                 background-color: var(--main3-color2);
                 border-radius: var(--raduis-border1);
                 overflow: hidden;
-                max-height: 500px;
 
                 position: relative;
                 display: grid;
