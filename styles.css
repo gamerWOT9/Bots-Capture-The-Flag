@@ -36,8 +36,8 @@ z-index: 8;
 
     --main2-color1: white;
 
-    --main3-color1: rgb(204, 195, 255);
-    --main3-color2: rgb(155 138 255);
+    --main3-color1: transparent;
+    --main3-color2: transparent;
 
 
     --responsivePadding: 40px;
@@ -339,11 +339,17 @@ div.background-image {
                 text-decoration: underline overline var(--main3-color1);
             }
             .body1 h2 {
+                color: white;
                 margin: 0;
             }
             .body1 p {
+                color: white;
                 font-family: 'Syne', sans-serif;
                 font-size: 25px;
+            }
+
+            .bkg-transparent {
+                background-color: transparent !important;
             }
 
             main {
@@ -409,6 +415,9 @@ div.background-image {
                 display: grid;
                 /*gap: 1.25rem;*/
                 grid-template-columns: repeat(2, 1fr);
+
+                background: rgb(195,34,194);
+                background: linear-gradient(56deg, rgba(195,34,194,1) 0%, rgba(45,46,253,1) 100%);
             }
             .img-container {
                 height: 100%;
