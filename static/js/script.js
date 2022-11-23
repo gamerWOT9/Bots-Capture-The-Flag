@@ -22,6 +22,7 @@ function scrollFunction() {
 
 function reveal() {
   var reveals = document.querySelectorAll(".reveal");
+  var hello = document.getElementsByClassName("helloworld")
 
   for (var i = 0; i < reveals.length; i++) {
     var windowHeight = window.innerHeight;
@@ -30,8 +31,10 @@ function reveal() {
 
     if (elementTop < windowHeight - elementVisible) {
       reveals[i].classList.add("active");
+      hello[0].style.display = "grid";
     } else {
       reveals[i].classList.remove("active");
+      hello[0].style.display = "none";
     }
   }
 }

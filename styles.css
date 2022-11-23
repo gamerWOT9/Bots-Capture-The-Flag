@@ -487,6 +487,10 @@ div.background-image {
 
 
 
+            
+
+
+
             .sb-body-credit {
                 background-color: black;
                 border-radius: var(--raduis-border1);
@@ -497,6 +501,8 @@ div.background-image {
                 margin-left: auto;
                 margin-right: auto;
                 z-index: 1;
+
+                display: grid;
             }
             .credit-section1 {
                 width: 100%;
@@ -510,14 +516,15 @@ div.background-image {
                 align-items: center;
                 justify-content: center;
             }
+
             .a-long-time-ago {
                 /* cosmétique */
                 font-size: 32px;
-                color: #4bd5ee;
+                color: white;
                 /* Animation: Apparition et disparition progressive */
                 opacity: 0;
                 animation-delay: 1s;
-                animation-duration: 1s;
+                animation-duration: 3s;
                 animation-name: a-long-time-ago;
                 animation-timing-function: ease-out;
             }
@@ -529,23 +536,23 @@ div.background-image {
                 100% { opacity: 0; }
             }
             .crawl {
+                display: block;
                 /* centrage de l'élément' */
                 overflow: hidden;
                 position: absolute;
-                top: 45%;
-                left: 50%;
+
                 width: 800px;
+                height: 100%;
+
                 margin: 0 0 0 -400px;
-                top: auto;
                 bottom: 0;
-                height: 50em;
+                left: 50%;
+
                 /* cosmétique */
-                color: #ffff66;    
-                font-size: 64px;
                 text-align: justify;
                 /* Applique la transformation  */
                 transform-origin: center bottom;
-                transform: perspective(280px) rotateX(20deg);
+                transform: perspective(250px) rotateX(25deg);
             }
             
             .crawl > div {
@@ -553,8 +560,8 @@ div.background-image {
                 /* l'animation la fait remonter progressivement */
                 position: absolute;
                 top: 100%; 
-                animation-delay: 2s; /* Démarre l'animation après la première */
-                animation-duration: 20s;
+                animation-delay: 4s; /* Démarre l'animation après la première */
+                animation-duration: 35s;
                 animation-name: crawl;
                 animation-timing-function: linear;
             }
