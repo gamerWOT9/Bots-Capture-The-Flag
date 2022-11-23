@@ -108,6 +108,18 @@ div.background-image {
             animation-duration: 1s;
             animation-timing-function: ease-in-out;
         }
+
+
+        .reveal{
+            position: relative;
+            transform: translateY(150px);
+            opacity: 0;
+            transition: 500ms all ease;
+          }
+          .reveal.active{
+            transform: translateY(0);
+            opacity: 1;
+          }
 /* ANIMATIONS */
 
 
@@ -365,9 +377,6 @@ div.background-image {
             }
 
             .sb-body-white {
-                margin: 120px 0 120px 0;
-                padding: 120px 0 0 0;
-
                 width: var(--body-width);
                 margin-left: auto;
                 margin-right: auto;
