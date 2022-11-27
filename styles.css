@@ -206,6 +206,10 @@ div.background-image {
             z-index: 100;
             transition: margin 700ms;
         }
+        .section1-logo:hover {
+            transform: scale(1.05);
+            transition: 100ms;
+        }
         .section1-header .section1-logo a {
             display: flex;
             -webkit-box-align: center;
@@ -258,6 +262,11 @@ div.background-image {
             position: relative;
             height: 100%;
             align-items: center;
+        }
+
+        a.Link:active {
+            transform: scale(0.9);
+            transition: 100ms;
         }
 
 
