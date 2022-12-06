@@ -74,4 +74,8 @@
     .img-container {
         min-height: 550px;
     }
+
+    .sb2-body-hi {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
