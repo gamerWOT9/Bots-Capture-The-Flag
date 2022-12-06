@@ -36,8 +36,12 @@ z-index: 8;
 
     --main2-color1: white;
 
-    --main3-color1: #125d9375;
+    --main3-color1: transparent;
     --main3-color2: transparent;
+    
+    --main4-color1: #202225;
+
+    --transition-time1: 0.1s;
 
 
     --responsivePadding: 40px;
@@ -66,6 +70,7 @@ body {
     padding: 0;
 }
 div.background-image {
+    display: none;
     opacity: 0.8;
 
     top: 0;
@@ -85,7 +90,7 @@ div.background-image {
     background: radial-gradient(circle at 50% 0, rgba(var(--main1-color2),1) 0%, rgba(var(--main1-color2),0.5) 20%, rgba(0,0,0,0) 100%);
 }
 div.background-image-noise {
-    opacity: 0.8;
+    opacity: 0.2;
 
     top: 0;
     right: 0;
@@ -187,6 +192,15 @@ div.background-image-noise {
             height: 100%;
             display: flex;
             align-items: center;
+        }
+        a.Link:hover {
+            transform: translateY(-2px);
+            transition: var(--transition-time1);
+        }
+        .prevent-select {
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
         }
 
 
@@ -491,7 +505,7 @@ div.background-image-noise {
 
 
             .sb-body-video {
-                background-color: black;
+                background-color: var(--main4-color1);
                 border-radius: var(--raduis-border1);
                 overflow: hidden;
                 min-height: 500px;
@@ -525,10 +539,10 @@ div.background-image-noise {
 
 
             .sb-body-credit {
-                background-color: black;
+                background-color: var(--main4-color1);
                 border-radius: var(--raduis-border1);
                 overflow: hidden;
-                min-height: 500px;
+                min-height: 700px;
 
                 width: var(--body-width);
                 margin-left: auto;
@@ -540,7 +554,7 @@ div.background-image-noise {
             .credit-section1 {
                 width: 100%;
                 height: 100%;
-                background: black;
+                background: var(--main4-color1);
                 margin: 0;
                 overflow: hidden; /* Evite la scrollbar */
               
@@ -552,14 +566,24 @@ div.background-image-noise {
 
             .a-long-time-ago {
                 /* cosmétique */
-                font-size: 32px;
+                font-size: 60px;
                 color: white;
+                text-align: center;
                 /* Animation: Apparition et disparition progressive */
                 opacity: 0;
                 animation-delay: 1s;
-                animation-duration: 3s;
+                animation-duration: 4s;
                 animation-name: a-long-time-ago;
                 animation-timing-function: ease-out;
+            }
+            .crawl h1 {
+                color: yellow;
+                text-align: center;
+                text-decoration: none;
+            }
+            .crawl p {
+                font-size: 65px;
+                text-align: center;
             }
             
             @keyframes a-long-time-ago {
@@ -574,10 +598,10 @@ div.background-image-noise {
                 overflow: hidden;
                 position: absolute;
 
-                width: 800px;
-                height: 300%;
+                width: 90%;
+                height: 390%;
 
-                margin: 0 0 0 -400px;
+                margin: 0 0 0 -45%;
                 bottom: 0;
                 left: 50%;
 
@@ -593,8 +617,8 @@ div.background-image-noise {
                 /* l'animation la fait remonter progressivement */
                 position: absolute;
                 top: 100%; 
-                animation-delay: 4s; /* Démarre l'animation après la première */
-                animation-duration: 35s;
+                animation-delay: 4.2s; /* Démarre l'animation après la première */
+                animation-duration: 45s;
                 animation-name: crawl;
                 animation-timing-function: linear;
             }
