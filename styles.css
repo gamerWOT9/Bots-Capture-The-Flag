@@ -275,17 +275,26 @@ div.background-image-noise {
             translate: 20px 50px;
         }
         .sb1-links {
+            background: rgb(0 0 0 / 75%);
+            /*backdrop-filter: blur(5px);*/
+            border-radius: 20px;
+            padding: 0 31px;
+            display: grid;
+
+            height: 100%;
+
+            position: absolute;
+            top: 10px;
+        }
+        .links-mainlinks1 {
+            height: 100%;
+            align-items: center;
+
             display: flex;
             flex-direction: row;
             gap: 40px;
 
             height: 100%;
-            align-items: center;
-
-            background: rgb(0 0 0 / 75%);
-            /*backdrop-filter: blur(5px);*/
-            border-radius: 20px;
-            padding: 0 31px;
         }
         .section1-column {
             display: flex;
@@ -427,6 +436,7 @@ div.background-image-noise {
             main {
                 width: 100%;
                 min-height: 5000px;
+                overflow-y: hidden;
             }
 
             .sb-body-hi {
@@ -455,11 +465,15 @@ div.background-image-noise {
                 margin-left: auto;
                 margin-right: auto;
                 z-index: 1;
-
+            }
+            .fct-grid1 {
                 position: relative;
                 display: grid;
                 gap: 1.25rem;
                 grid-template-columns: repeat(2, 1fr);
+            }
+            .fct-img1 {
+                width: 100%;
             }
             .grid-body-white {
                 position: relative;
