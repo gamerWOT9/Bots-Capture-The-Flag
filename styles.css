@@ -285,6 +285,8 @@ div.background-image-noise {
 
             position: absolute;
             top: 10px;
+
+            transition: 500ms;
         }
         .links-mainlinks1 {
             height: 100%;
@@ -304,6 +306,12 @@ div.background-image-noise {
             align-items: center;
         }
 
+        .Link.active {
+            display: none;
+        }
+        .Link.ractive {
+            display: none;
+        }
         a.Link:active {
             transform: scale(0.9);
             transition: 100ms;
