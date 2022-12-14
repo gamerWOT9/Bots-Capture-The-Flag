@@ -288,6 +288,9 @@ div.background-image-noise {
 
             transition: 500ms;
         }
+        .sb1-links.active {
+            height: 144px;
+        }
         .links-mainlinks1 {
             height: 100%;
             align-items: center;
@@ -307,16 +310,22 @@ div.background-image-noise {
         }
 
         .Link.active::after {
-            content: "-";
-            font-size: 30px;
+            content: "-" !important;
         }
-        .Link.noactive::after {
+        #btnlinks::after {
             content: "+";
             font-size: 30px;
         }
         a.Link:active {
             transform: scale(0.9);
             transition: 100ms;
+        }
+
+        #linksmore {
+            display: none;
+        }
+        #linksmore.active {
+            display: flex !important;
         }
 
 

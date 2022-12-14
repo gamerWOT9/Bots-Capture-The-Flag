@@ -11,6 +11,26 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#btnlinks').click(function() {
+                    var clicks = $(this).data('clicks');
+                    if (clicks) {
+                        $('#linksmore').removeClass('active');
+                        $("#btnlinks").removeClass('active');
+                        $(".sb1-links").removeClass('active');
+                        $(this).data(!clicks, "clicks");
+                    } else {
+                        $(".sb1-links").addClass("active");
+                        $('#linksmore').addClass("active");
+                        $("#btnlinks").addClass("active");
+                    }
+                    $(this).data("clicks", !clicks);
+                });
+            });
+        </script>
     </head>
 
     <body>
@@ -47,10 +67,10 @@
                                             <a class="Link" href="#">Robot</a>
                                         </div>
                                         <div class="section1-column">
-                                            <a id="btnlinks" class="Link noactive" onclick="fctMoreLINKS();" style="cursor: help;"></a>
+                                            <a id="btnlinks" class="Link" style="cursor: help;"></a>
                                         </div>
                                     </div>
-                                    <div id="links-more" class="links-mainlinks1 links-section-more" style="display: none;">
+                                    <div id="linksmore" class="links-mainlinks1 links-section-more">
                                         <div class="section1-column">
                                             <a class="Link" href="#">testtttt</a>
                                         </div>
