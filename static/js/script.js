@@ -43,26 +43,73 @@ window.addEventListener("scroll", reveal);
 
 
 
-
+/*
 function openCity(evt, cityName) {
   // Declare all variables
   var i, tabcontent, tablinks;
   var sb1 = document.getElementById("sb1id-links")
 
   // Get all elements with class="tabcontent" and hide them
-  tabcontent = document.getElementsByClassName("tabcontent");
+  tabcontent = document.getElementsByClassName("links-section-more");
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
   }
 
   // Get all elements with class="tablinks" and remove the class "active"
-  tablinks = document.getElementsByClassName("tablinks");
+  tablinks = document.getElementsByClassName("noactive");
   for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
+    tablinks[i].className = tablinks[i].className.replace(" noactive", " active");
+    document.getElementById(cityName).style.display = "flex";
+    sb1.style.height = "160px";  
   }
 
-  // Show the current tab, and add an "active" class to the link that opened the tab
-  document.getElementById(cityName).style.display = "flex";
-  sb1.style.height = "160px";
-  evt.currentTarget.className += " active";
+  tablinks = document.getElementsByClassName("active");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", " noactive");
+    document.getElementById(cityName).style.display = "flex";
+    sb1.style.height = "72px";  
+  }
+}
+*/
+/*
+function openCity(evt, cityName) {
+  var i, sectionmore, noactive;
+  var sb1 = document.getElementById("sb1id-links")
+  var btnlinks = document.getElementById("btnlinks")
+  let elm = document.getElementById('btnlinks');
+
+  tabcontent = document.getElementsByClassName("links-section-more");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  if(elm.classList.contains("noactive")){
+    tablinks = document.getElementsByClassName("noactive");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" noactive", " active");
+      document.getElementById(cityName).style.display = "flex";
+      sb1.style.height = "160px";  
+    }
+  }
+  else if(elm.classList.contains("active")){
+    tablinks = document.getElementsByClassName("active");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", " noactive");
+      document.getElementById(cityName).style.display = "flex";
+      sb1.style.height = "72px";  
+    }
+  }
+}*/
+
+
+function fctMoreLINKS() {
+  var btn = document.getElementById("btnlinks"), 
+  linksmore = document.getElementById("links-more");
+  
+  if (btn.style.className === "noactive") {
+    btn.className.replace("noactive", "active")
+  } 
+  else {
+    btn.className.replace("active", "noactive")
+  }
 }

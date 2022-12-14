@@ -306,11 +306,13 @@ div.background-image-noise {
             align-items: center;
         }
 
-        .Link.active {
-            display: none;
+        .Link.active::after {
+            content: "-";
+            font-size: 30px;
         }
-        .Link.ractive {
-            display: none;
+        .Link.noactive::after {
+            content: "+";
+            font-size: 30px;
         }
         a.Link:active {
             transform: scale(0.9);
