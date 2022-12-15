@@ -332,6 +332,7 @@ div.background-image-noise {
 
         #linksmore {
             display: none;
+            border-top: solid white 1px;
         }
         #linksmore.active {
             display: flex !important;
@@ -345,8 +346,7 @@ div.background-image-noise {
         .section1-column, .section1-column {
         position: relative;
         }
-        .section1-column:after,
-        .section1-column:after {
+        .section1-column:not(.not):after {
         position: absolute;
         bottom: 0;
         left: 0;
@@ -366,7 +366,7 @@ div.background-image-noise {
         transition: all 500ms;
         }
 
-        .section1-column:after {
+        .section1-column:not(.not):after {
         text-align: left;
         content: '.';
         margin: 0;
@@ -465,6 +465,7 @@ div.background-image-noise {
                 width: 100%;
                 min-height: 5000px;
                 overflow-y: hidden;
+                overflow-x: hidden;
             }
 
             .sb-body-hi {
