@@ -54,7 +54,7 @@ z-index: 8;
     --github-faq-responsive: 16px;
     --github-home-responsive: 14px;
     --github-resources-responsive: 16px;
-    --body-width: 80%;
+    --body-width: 60%;
     --raduis-border1: 30px;
     background-color: black;
 }
@@ -301,14 +301,13 @@ div.background-image-noise {
             height: 100%;
         }
         .links-mainlinks1 {
+            width: 550px;
             height: 100%;
             align-items: center;
+            justify-content: space-between;
 
             display: flex;
             flex-direction: row;
-            gap: 40px;
-
-            height: 100%;
         }
         .section1-column {
             display: flex;
@@ -453,7 +452,7 @@ div.background-image-noise {
             .body1 p {
                 color: var(--font-color1);
                 font-family: 'Syne', sans-serif;
-                font-size: 25px;
+                font-size: 20px;
             }
 
             .bkg-transparent {
@@ -579,6 +578,39 @@ div.background-image-noise {
             }
             .for-section1-main {
                 padding: 30px;
+            }
+
+            .section1-main .sb1 {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .section1-main .sb1 div.content-social-network {
+                border-radius: var(--raduis-border1);
+                padding: 20px;
+                color: white;
+            }
+            .section1-main .sb1 div.content-social-network:hover {
+                --tw-bg-opacity: 1;
+                background-color: rgb(48 48 48/var(--tw-bg-opacity));
+            }
+
+            .social-network {
+                border-radius: 100%;
+                justify-content: center;
+                align-items: center;
+                width: 2.5rem;
+                height: 2.5rem;
+                display: flex;
+                position: relative;
+            }
+            .icon-social-network {
+                height: 1em;
+                font-size: 20px;
+            }
+            .SN-text {
+                line-height: 17px;
+
+                margin-top: 0.75rem;
             }
 
 

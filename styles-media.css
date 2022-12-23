@@ -1,4 +1,8 @@
 @media (max-width: 1150px) {
+    :root {
+        --body-width: 85%;
+    }
+
     .section1-navigation {
         height: 72px;
     }
@@ -85,5 +89,10 @@
 
     .sb2-body-hi {
         grid-template-columns: repeat(1, 1fr);
+    }
+    .reveal {
+        transform: translateY(0) !important;
+        opacity: 1 !important;
+        transform: scale(1) !important;
     }
 }
