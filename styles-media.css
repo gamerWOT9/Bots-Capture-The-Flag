@@ -95,4 +95,26 @@
         opacity: 1 !important;
         transform: scale(1) !important;
     }
+
+
+    .body-shop {
+        display: grid;
+        gap: 50px;
+    }
+    .body-shop img {
+        height: 650px;
+    }
+    .shop-card:hover > img {
+        height: 450px;
+    }
+    .body-shop, .body-shop p, .body-shop li {
+        font-size: 50px !important;
+        margin: 50px 0;
+    }
+    .shop-card {
+        height: 800px;
+    }
+    .shop-card:hover {
+        height: 1090px;
+    }
 }
